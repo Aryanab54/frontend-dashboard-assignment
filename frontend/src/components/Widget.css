@@ -1,0 +1,208 @@
+.widget {
+  background-color: #fff;
+  border-radius: 12px;
+  padding: 20px;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.08);
+  position: relative;
+  min-height: 220px;
+  border: 1px solid #e8ecef;
+}
+
+.widget-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  margin-bottom: 16px;
+}
+
+.widget-title {
+  font-size: 14px;
+  font-weight: 600;
+  color: #2c3e50;
+  margin: 0;
+  flex: 1;
+  line-height: 1.4;
+}
+
+.remove-btn {
+  background: none;
+  border: none;
+  cursor: pointer;
+  color: #95a5a6;
+  font-size: 18px;
+  padding: 0;
+  width: 24px;
+  height: 24px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 4px;
+}
+
+.remove-btn:hover {
+  color: #e74c3c;
+  background-color: #fdf2f2;
+}
+
+.widget-content {
+  height: calc(100% - 50px);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.chart-container {
+  display: flex;
+  align-items: center;
+  gap: 30px;
+  width: 100%;
+}
+
+.donut-chart {
+  width: 120px;
+  height: 120px;
+  border-radius: 50%;
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.donut-chart.blue {
+  background: conic-gradient(#4285f4 0deg 180deg, #e8eaed 180deg 360deg);
+}
+
+.donut-chart.multicolor {
+  background: conic-gradient(
+    #dc3545 0deg 60deg,
+    #fd7e14 60deg 120deg, 
+    #ffc107 120deg 180deg,
+    #28a745 180deg 360deg
+  );
+}
+
+.donut-center {
+  width: 60px;
+  height: 60px;
+  background: white;
+  border-radius: 50%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.center-number {
+  font-size: 18px;
+  font-weight: 700;
+  color: #2c3e50;
+}
+
+.center-label {
+  font-size: 10px;
+  color: #7f8c8d;
+}
+
+.chart-legend {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+
+.legend-item {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  font-size: 12px;
+  color: #2c3e50;
+}
+
+.legend-dot {
+  width: 8px;
+  height: 8px;
+  border-radius: 50%;
+}
+
+.legend-dot.blue { background-color: #4285f4; }
+.legend-dot.gray { background-color: #e8eaed; }
+.legend-dot.red { background-color: #dc3545; }
+.legend-dot.orange { background-color: #fd7e14; }
+.legend-dot.yellow { background-color: #ffc107; }
+.legend-dot.green { background-color: #28a745; }
+
+.bar-chart-container {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+
+.bar-total {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.bar-number {
+  font-size: 24px;
+  font-weight: 700;
+  color: #2c3e50;
+}
+
+.bar-label {
+  font-size: 12px;
+  color: #7f8c8d;
+}
+
+.progress-bar {
+  width: 100%;
+  height: 8px;
+  border-radius: 4px;
+  display: flex;
+  overflow: hidden;
+  background-color: #e8eaed;
+}
+
+.progress-segment {
+  height: 100%;
+}
+
+.progress-segment.red { background-color: #dc3545; }
+.progress-segment.orange { background-color: #fd7e14; }
+.progress-segment.yellow { background-color: #ffc107; }
+.progress-segment.gray { background-color: #e8eaed; }
+
+.bar-legend {
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+}
+
+.empty-chart {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 16px;
+  color: #7f8c8d;
+}
+
+.empty-bar-chart {
+  display: flex;
+  align-items: end;
+  gap: 8px;
+  height: 60px;
+  padding: 0 20px;
+}
+
+.bar-item {
+  width: 12px;
+  background-color: #bdc3c7;
+  border-radius: 2px 2px 0 0;
+  opacity: 0.4;
+}
+
+.empty-text {
+  font-size: 13px;
+  text-align: center;
+  color: #95a5a6;
+}
